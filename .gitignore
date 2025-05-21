@@ -1,0 +1,8 @@
+# Dependencies
+node_modules/
+
+# Test output
+allure-results/
+allure-report/
+
+.DS_Store

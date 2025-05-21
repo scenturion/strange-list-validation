@@ -1,0 +1,37 @@
+{
+  "name": "webdriverio-cucumber-typescript",
+  "version": "1.0.0",
+  "description": "WebdriverIO automation framework with Cucumber and TypeScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx wdio run wdio.conf.ts --project tsconfig.json",
+    "test:docker": "docker compose up",
+    "test:debug": "npx wdio run wdio.conf.ts --project tsconfig.json --debug",
+    "lint": "eslint . --ext .ts",
+    "lint:fix": "eslint . --ext .ts --fix"
+  },
+  "keywords": [
+    "webdriverio",
+    "cucumber",
+    "typescript",
+    "automation"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@cucumber/cucumber": "^11.3.0",
+    "@types/node": "^20.11.24",
+    "@typescript-eslint/eslint-plugin": "^7.1.0",
+    "@typescript-eslint/parser": "^7.1.0",
+    "@wdio/allure-reporter": "^8.32.4",
+    "@wdio/cli": "^8.32.4",
+    "@wdio/cucumber-framework": "^8.32.4",
+    "@wdio/local-runner": "^8.32.4",
+    "@wdio/spec-reporter": "^8.32.4",
+    "chromedriver": "^136.0.0",
+    "eslint": "^8.57.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3",
+    "wdio-chromedriver-service": "^8.1.1"
+  }
+}
