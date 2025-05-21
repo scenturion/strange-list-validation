@@ -19,7 +19,6 @@ Given('I navigato to the application', async function(this: World): Promise<void
     console.log('Waiting for media-list to be displayed...');
     await $('.media-list').waitForDisplayed({ timeout: 10000 });
     console.log('Media list is displayed');
-    await browser.pause(2000); // Pause to see the state
 });
 
 Given('there is an existing  item {string}', async function(this: World, text: string): Promise<void> {
@@ -31,7 +30,6 @@ When('I enter {string} into the new  input', async function(this: World, text: s
     console.log('Text to enter:', text);
     await homePage.newItemInput.setValue(text);
     console.log('Text entered successfully');
-    await browser.pause(2000); // Pause to see the state
 });
 
 When('I enter a string of {int} characters into the new  input', async function(this: World, length: number): Promise<void> {
@@ -50,7 +48,6 @@ When('I press Enter', async function(this: World): Promise<void> {
     console.log('\n=== Step: Pressing Enter ===');
     await homePage.createButton.click();
     console.log('Create button clicked');
-    await browser.pause(2000); // Pause to see the state
 });
 
 When('I double click on the  item {string}', async function(this: World, text: string): Promise<void> {
@@ -104,8 +101,6 @@ Then('I should see {string} in the  list', async function(this: World, text: str
         const itemText = await item.getText();
         console.log('Item text:', itemText);
     }
-    
-    await browser.pause(2000); // Pause to see the state
     
     const exists = await homePage.findItemWithText(text);
     console.log('Item exists:', exists);

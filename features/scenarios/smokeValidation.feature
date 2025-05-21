@@ -6,7 +6,7 @@ Feature: Check Item Exists
 
   Scenario: Create a new item
     Given I navigato to the application
-    When I upload the image from "Users/samuel/Desktop/samuel-webdriver-io/data-test" folder with name "robocop.jpeg"
+    When I upload the image from "./data-test" folder with name "robocop.jpeg"
     When I enter "robocop" into the new  input
     And I press Enter
     Then I should see "robocop" in the  list
