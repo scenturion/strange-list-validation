@@ -12,8 +12,8 @@ Este framework de pruebas automatizadas está construido con WebdriverIO, Cucumb
 
 1. Clona el repositorio:
 ```bash
-git clone <repository-url>
-cd samuel-webdriver-io
+git clone git@github.com:scenturion/strange-list-validation.git
+cd strange-list-validation
 ```
 
 2. Instala las dependencias:
